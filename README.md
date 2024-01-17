@@ -49,3 +49,5 @@ There are images 0-6 for the hangman, drawn by myself.
 gamestate.txt saves the game state, as will be described.
 dictionary.txt includes 200 SAT vocab words from this website:
 https://www.collegetransitions.com/blog/sat-vocabulary-words-list/
+
+<img width="400" alt="image" src="https://github.com/LilianXiao/Hangman/assets/94140612/ac270c4e-4a28-4c60-8e1b-d3eca9737dc6">
