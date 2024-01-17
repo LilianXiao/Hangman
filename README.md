@@ -1,6 +1,6 @@
 # Hangman
 
-1.File I/O is integral in my Hangman game.  On a basic level, it can efficiently handle image loading
+1. File I/O is integral in my Hangman game.  On a basic level, it can efficiently handle image loading
     and updating mechanisms (as seen in ImageManager.java, where the imageLoader and updateImage methods
     are found).  A BufferedImage field reads the file of the given filepath to create or update a
     JLabel component directly in the Hangman GUI.  Similarly, the WordManager class uses File I/O to
@@ -16,20 +16,20 @@
     FileWriter writes this data to the text file gamestate.txt).  The player can save their game, then
     reload it when they want to come back to it, and play regularly.
 
-  2.Collections is implemented using ArrayLists, which are conveniently indexed lists
+  2. Collections is implemented using ArrayLists, which are conveniently indexed lists
     for storing essential game information.  In WordManager, the BufferedReader reads from the dictionary
     file and encapsulates the data in the ArrayList<String> wordsList.  I considered using a HashMap
     or TreeMap in the beginning because of the key--value system, but I ultimately decided to use a
     simpler indexed and mutable list like ArrayList to store just dictionary words and the index they
     are at (for easy access).
 
-  3.A central component of the Hangman GUI is a panel of JButtons that the player clicks
+  3. A central component of the Hangman GUI is a panel of JButtons that the player clicks
     to reveal the hidden word.  Because the number of buttons required is an unchanging value (26 letters)
     and can be stored as such, I implemented a 2D array JButton[][] letterArray that is a 4x7 grid
     populated by these JButtons.  This provides efficient and easy access as well as iteration through
     the JButtons if they require to be changed after user interaction in ActionPerformed.
 
-  4.The final component is the JUnit Testable component that is included mainly to assess the main game
+  4. The final component is the JUnit Testable component that is included mainly to assess the main game
     logic/helper methods in WordManager and ImageManager.  The tests are thoroughly comprehensive and ensure
     that there are no unhandled exceptions in the case that the filepath is null, empty, or nonempty
     but not an actual file.  The JUnit tests were made throughout the development of the rest of the
